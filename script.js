@@ -136,6 +136,8 @@ const btnThumbnailGen = document.getElementById("btnThumbnailGen")
 
 btnThumbnailGen.addEventListener("click", () => {
 
+
+
   let exurl = "https://youtu.be/7aoDZ8UeUxU"
   // https://www.youtube.com/watch?v=7aoDZ8UeUxU
 
@@ -154,6 +156,11 @@ btnThumbnailGen.addEventListener("click", () => {
   const thumbnailSection = document.getElementById('HighQuality');
   thumbnailSection.innerHTML = '<p> High Quality </p>'; // Clear previous content
   thumbnailSection.appendChild(thumbnailImage);
+  
+  // document.getElementById("iframe").innerHTML = `<pre><code><iframe width="560" height="315" src="https://www.youtube.com/embed/${urlId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></code></pre>`;
+
+  document.getElementById("iframe").innerText = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${urlId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+
 
 
   //for standard Quality
@@ -187,3 +194,9 @@ generatedURL.addEventListener("click", () => {
   generatedURL.setSelectionRange(0, 99999);  
   document.execCommand("copy");
 })
+
+
+
+
+
+
