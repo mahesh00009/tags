@@ -1,0 +1,123 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: seashell;
+
+}
+
+.tagContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+h1{
+    text-align: center;
+}
+input{
+    width: 300px;
+    display: flex;
+    margin-top: 12px; 
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    border-bottom: 1px solid orange;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+}
+
+textarea{
+    margin-left: 25px;
+    margin-top: -20px;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    border-bottom: 1px solid orange;
+
+}
+.container{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 80%;
+    height:40px;
+    margin-top: 20px;
+    background-color: rgb(27, 25, 25);
+    border:2px solid rgb(245, 230, 22);
+    color: rgb(238, 238, 238);
+    border-radius: 10px;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+
+}
+#reset{
+    margin-bottom: 10px;
+}
+
+#textfields{
+    position: relative;
+}
+span{
+    color:rgb(3, 86, 92);
+    position: absolute;
+    right:10px; 
+    margin:2px;
+    font-size: 13px; 
+}
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.secondSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.secondSection .bpmContainer{
+    width: 300px;
+    height: 150px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor:crosshair;
+}
+
+.secondSection .bpmContainer p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+.thumbnailSection input{
+    width:400px;
+}
+
+    #generateURL {
+        background-color: #f0f0f0; /* Set a background color to visually indicate it's disabled */
+        cursor: not-allowed; /* Change the cursor to indicate it's not clickable */
+        opacity: 0.7; /* Adjust opacity to further indicate it's disabled */
+        pointer-events: none; /* Adjust opacity to further indicate it's disabled */
+    }
+    #generateImage.allow-clicks {
+        pointer-events: auto; /* Enable pointer events to allow clicks */
+        cursor: text; /* Change the cursor back to the text cursor */
+        opacity: 1; 
+    }
